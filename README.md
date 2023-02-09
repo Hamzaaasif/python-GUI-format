@@ -29,3 +29,15 @@ For printing in pyGuiSimple output, use `print`
 print("This will print in PyGuiSimple output console")
 ```
 
+# 4- Generating standalone executable files
+
+## For Windows
+```
+pyinstaller.exe --onefile ./<PYTHON_FILE_NAME>.py
+```
+
+## For MacOS
+
+```
+python3 -m PyInstaller --onefile ./<PYTHON_FILE_NAME>.py
+```
