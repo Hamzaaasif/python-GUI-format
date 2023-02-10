@@ -39,5 +39,16 @@ pyinstaller.exe --onefile ./<PYTHON_FILE_NAME>.py
 ## For MacOS
 
 ```
-python3 -m PyInstaller --onefile ./<PYTHON_FILE_NAME>.py
+python3 -m PyInstaller --windowed ./<PYTHON_FILE_NAME>.py
+
+--- The issue 
+
+pyinstaller --windowed myapp.py
+cd dist/myapp.app/Contents/MacOs
+mkdir tcl tk
+cp -R /Library/Frameworks/Python.framework/Versions/3.7/lib/tcl* tcl/
+cp -R /Library/Frameworks/Python.framework/Versions/3.7/lib/tk* tk/
+cp -R /Library/Frameworks/Python.framework/Versions/3.7/lib/Tk* tk/ 
+
 ```
+The executable file will be found in script->script.app(show contained files)->MacOs->script.app
