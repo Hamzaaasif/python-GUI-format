@@ -72,6 +72,11 @@ pyinstaller.exe --onefile ./<PYTHON_FILE_NAME>.py
 
 ## For MacOS
 
+### Updated Method
+```
+pyinstaller --onefile --icon=PATH_TO_ICON gui.py
+```
+### OLD METHOD
 ```
 python3 -m PyInstaller --windowed ./<PYTHON_FILE_NAME>.py
 
